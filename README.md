@@ -261,6 +261,7 @@ $ minikube start --docker-env HTTP_PROXY=http://$YOURPROXY:PORT \
 
 
 ## Known Issues
+
 * Features that require a Cloud Provider will not work in Minikube. These include:
   * LoadBalancers
   * PersistentVolumes
@@ -268,6 +269,7 @@ $ minikube start --docker-env HTTP_PROXY=http://$YOURPROXY:PORT \
 * Features that require multiple nodes. These include:
   * Advanced scheduling policies
 * Alternate runtimes, like rkt.
+* Proxies and VPNs are know to cause cluster connection issues  
 
 ## Design
 
